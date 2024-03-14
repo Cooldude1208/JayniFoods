@@ -6,7 +6,7 @@ from flask import Flask, render_template
 # If you are using a single module (as in this example), you should use name because depending on if 
 # it’s started as application or imported as module the name will be different ('main' versus the actual import name). 
 # This is needed so that Flask knows where to look for templates, static files, and so on.
-app = Flask(__name__, static_folder="../static/dist", template_folder="../static")
+app = Flask(__name__, static_folder="./static/dist", template_folder="./static")
 
 # We then use the route() decorator to tell Flask what URL should trigger our function.
 # The function is given a name which is also used to generate URLs for that particular function, 
