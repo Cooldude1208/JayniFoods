@@ -10,4 +10,4 @@ def index():
     return send_from_directory(os.path.join(os.getcwd(), 'frontend', 'build'), 'index.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
